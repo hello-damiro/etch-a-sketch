@@ -18,11 +18,11 @@ VIEW PROGRESS [HERE](https://hello-damiro.github.io/etch-a-sketch)
 
 Work on js to create the following:
 
-1. create a variable equal to dimension of the canvas `canvas-size`
+1. create a variable equal to dimension of the canvas `dimension`
 2. create a `canvas` div
 3. create a `column-container` inside the `canvas`
-4. inside the `column-container` create multiple containers to contain numerous `pixel` divs equal to `canvas-size`
-5. multiply `column-container` equal to `canvas-size`
+4. inside the `column-container` create multiple containers to contain numerous `pixel` divs equal to `dimension`
+5. multiply `column-container` equal to `dimension`
 6. using js, create a functionality for the `pixel` to react on mouse event
 
 ### Structure

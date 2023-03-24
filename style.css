@@ -47,14 +47,23 @@ section {
     justify-content: center;
 }
 
-.pixel {
-    aspect-ratio: 1 / 1;
-    background: red;
-}
-
 #canvas {
     padding: 0 16px;
     margin: 16px 0;
+}
+
+.column-container {
+    width: 100%;
+    max-width: var(--max-w);
+    min-width: var(--min-w);
+    display: flex;
+    flex: 1;
+}
+
+.pixel {
+    aspect-ratio: 1 / 1;
+    border: 1px solid var(--gray);
+    width: 100%;
 }
 
 #controls {
