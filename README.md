@@ -4,7 +4,7 @@ The Odin Project - JS Foundation Project
 
 ## Warning: This is a work in progress
 
-VIEW PROGRESS [HERE](https://hello-damiro.githuub.io/etch-a-sketch)
+VIEW PROGRESS [HERE](https://hello-damiro.github.io/etch-a-sketch)
 
 </br>
 
