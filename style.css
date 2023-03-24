@@ -79,7 +79,7 @@ section {
     background: red;
 }
 
-#pixel-slider {
+#dimension-slider {
     width: 100%;
     background-image: url("assets/line.svg");
     background-repeat: no-repeat;
