@@ -1,6 +1,19 @@
 :root {
     --black: #202020;
+    --gray: #767676;
     --white: #e8e8e8;
+    --max-w: 600px;
+    --min-w: 280px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+a:hover {
+    text-decoration: none;
+    color: var(--gray);
 }
 
 body {
@@ -9,14 +22,90 @@ body {
     color: var(--white);
     text-transform: uppercase;
     letter-spacing: 3px;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
     font-size: 20px;
     font-weight: 700;
+    padding: 0 16px;
+}
+
+section {
+    margin: 0 auto;
+    width: 100%;
+    max-width: var(--max-w);
+    min-width: var(--min-w);
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.pixel {
+    aspect-ratio: 1 / 1;
+    background: red;
+}
+
+#canvas {
+    padding: 0 16px;
+    margin: 16px 0;
+}
+
+#controls {
+    padding: 0 16px;
+    display: flex;
+    gap: 16px;
+    background
+}
+
+#color-picker {
+    width: 48px;
+    aspect-ratio: 1 / 1;
+    background: red;
+}
+
+#pixel-slider {
+    width: 100%;
+    background-image: url("assets/line.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% auto;
 }
 
 footer {
     font-size: 14px;
     font-weight: 300;
+    margin: 0 auto;
+    width: 100%;
+    max-width: var(--max-w);
+    min-width: var(--min-w);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+footer > div {
+    padding: 16px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+footer > :first-child {
+    padding-left: 16px;
+}
+
+footer > :last-child {
+    padding-right: 16px;
+}
+
+footer > div > img {
+    padding: 0 8px;
 }
