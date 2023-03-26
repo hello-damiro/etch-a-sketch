@@ -19,10 +19,17 @@
 <body>
     <section class="container">
         <header>etch-a-sketch</header>
-        <div id="canvas"></div>
+        <div id="canvas">
+        </div>
         <div id="controls">
-            <input type="color" id="color-picker" name="color-picker">
-            <input type="range" id="dimension-slider" name="slider" min="4" max="32" value="16">
+            <input type="color" id="color-picker" name="color-picker" value="#bada55">
+            <select id="color-type">
+                <option value="tint">Tint</option>
+                <option value="saturate">Saturate</option>
+                <option value="hue">Hue</option>
+                <option value="random">Random</option>
+            </select>
+            <input type="range" id="dimension-slider" name="slider" min="2" max="32" value="8">
         </div>
     </section>
     <footer>

@@ -1,5 +1,6 @@
 export function createGrid(dimension) {
     const canvas = document.getElementById('canvas');
+    canvas.innerHTML = '';
 
     // generate column containers
     for (let i = 0; i < dimension; i++) {

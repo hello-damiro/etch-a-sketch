@@ -17,9 +17,9 @@ a:hover {
 }
 
 body {
-    font-family: 'Roboto Slab', sans-serif;
     background: var(--black);
     color: var(--white);
+    font-family: 'Roboto Slab', sans-serif;
     text-transform: uppercase;
     letter-spacing: 3px;
     width: 100%;
@@ -78,6 +78,7 @@ section {
 #color-picker {
     width: 48px;
     height: 48px;
+    aspect-ratio: 1 / 1;
 }
 
 input[type="color"] {
@@ -97,6 +98,16 @@ input[type="color"]::-webkit-color-swatch-wrapper {
 
 input[type="color"]::-webkit-color-swatch {
     border: none;
+}
+
+#color-type {
+    background: #303030;
+    color: var(--white);
+    border: none;
+    padding: 0 16px;
+    font-family: 'Roboto Slab', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
 }
 
 #dimension-slider {
