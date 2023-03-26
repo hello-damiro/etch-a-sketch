@@ -1,20 +1,14 @@
-let dimension = 8;
+import { createGrid } from './js/create-grid.js';
+import { randomColor, randomSaturation, randomHue, randomTint } from './js/color-properties.js';
 
-const canvas = document.getElementById('canvas');
+let dimension = 32;
+createGrid(dimension);
 
-// generate column containers
-for (let i = 0; i < dimension; i++) {
-    const column = document.createElement('div');
-    column.classList.add('column-container');
-    canvas.appendChild(column);
-}
-
-// Irriterate pixels for every column
-for (let i = 1; i <= dimension; i++) {
-    let column = document.querySelector('.column-container:nth-of-type(' + i + ')');
-    for (let j = 0; j < dimension; j++) {
-        const pixel = document.createElement('div');
-        pixel.classList.add('pixel');
-        column.appendChild(pixel);
+function applyRandomColor() {
+    const pixel = document.querySelectorAll('.pixel');
+    for (let i = 0; i < pixel.length; i++) {
+        pixel[i].style.backgroundColor = randomTint('#7175f5');
     }
 }
+
+applyRandomColor();

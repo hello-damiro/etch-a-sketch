@@ -67,6 +67,8 @@ section {
 }
 
 #controls {
+    margin: 0;
+    padding: 0;
     padding: 16px 16px;
     display: flex;
     gap: 28px;
@@ -75,17 +77,35 @@ section {
 
 #color-picker {
     width: 48px;
-    aspect-ratio: 1 / 1;
-    background: red;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    height: 48px;
+}
+
+input[type="color"] {
+    border-color: inherit;
+    border-radius: 5px;
+    padding: 0;
+}
+
+input[type="color"]::-moz-color-swatch {
+    border: none;
+}
+
+input[type="color"]::-webkit-color-swatch-wrapper {
+    padding: 0;
+    border-radius: 0;
+}
+
+input[type="color"]::-webkit-color-swatch {
+    border: none;
 }
 
 #dimension-slider {
     width: 100%;
-    background-image: url("assets/line.svg");
-    background-repeat: no-repeat;
+    outline: none;
+    /* background-image: url("assets/line.svg"); */
+    /* background-repeat: no-repeat;
     background-position: center;
-    background-size: 100% auto;
+    background-size: 100% auto; */
 }
 
 footer {

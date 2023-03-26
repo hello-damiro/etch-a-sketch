@@ -12,7 +12,7 @@
         rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;700&display=swap" />
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <script type="module" src="script.js" defer></script>
     <title>Etch A Sketch</title>
 </head>
 
@@ -21,8 +21,8 @@
         <header>etch-a-sketch</header>
         <div id="canvas"></div>
         <div id="controls">
-            <div id="color-picker"></div>
-            <div id="dimension-slider"></div>
+            <input type="color" id="color-picker" name="color-picker">
+            <input type="range" id="dimension-slider" name="slider" min="4" max="32" value="16">
         </div>
     </section>
     <footer>
