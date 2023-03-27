@@ -119,6 +119,15 @@ input[type="color"]::-webkit-color-swatch {
     background-size: 100% auto; */
 }
 
+#dimension-text {
+    background: #303030;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    flex-grow: 0;
+    justify-content: center;
+    align-items: center;
+}
+
 footer {
     font-size: 14px;
     font-weight: 300;

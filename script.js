@@ -3,6 +3,7 @@ import { randomColor, randomSaturation, randomHue, randomTint } from './js/color
 
 let dimension = document.getElementById('dimension-slider');
 dimension.addEventListener('input', function () {
+    document.getElementById('dimension-text').textContent = dimension.value;
     controlChanges();
 });
 
@@ -28,7 +29,7 @@ function draw(color, type) {
     function selectedColorType(color, type) {
         if (type == 'hue') {
             return randomHue(color);
-        } else if (type == 'saturation') {
+        } else if (type == 'saturate') {
             return randomSaturation(color);
         } else if (type == 'tint') {
             return randomTint(color);
