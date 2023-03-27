@@ -2,15 +2,21 @@
 
 The Odin Project - JS Foundation Project
 
-## Warning: This is a work in progress
+LIVE SITE [HERE](https://hello-damiro.github.io/etch-a-sketch)
 
-VIEW PROGRESS [HERE](https://hello-damiro.github.io/etch-a-sketch)
+</br>
+
+![Screenshot](https://github.com/hello-damiro/etch-a-sketch/blob/main/assets/screenshot.png?raw=true)
 
 </br>
 
 ## Timeline
 
 **Day 1:** Work with pseudo code, create environment, setup files. Dive into code.
+
+**Day 2:** Struggled with some CSS. Research about color theory and applied some cool stuff on JS.
+
+**Day 3:** Finalize color functionalities.
 
 </br>
 
