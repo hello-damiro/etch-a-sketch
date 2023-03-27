@@ -63,7 +63,7 @@ section {
 .pixel {
     width: 100%;
     aspect-ratio: 1 / 1;
-    background: var(--gray);
+    background: var(--white);
 }
 
 #controls {

@@ -6,35 +6,56 @@ dimension.addEventListener('input', function () {
     controlChanges();
 });
 
-let color = document.getElementById('color-picker');
-color.addEventListener('input', function () {
-    controlChanges();
+let selectedColor = document.getElementById('color-picker');
+selectedColor.addEventListener('input', function () {
+    draw(selectedColor.value, colorType.value);
 });
 
 let colorType = document.getElementById('color-type');
 colorType.addEventListener('change', function () {
-    controlChanges();
+    draw(selectedColor.value, colorType.value);
 });
 
 function controlChanges() {
     createGrid(dimension.value);
-    applyRandomColor(color.value, colorType.value);
+    draw(selectedColor.value, colorType.value);
 }
 
-controlChanges();
-applyRandomColor(color.value, colorType.value);
+function draw(color, type) {
+    const pixels = document.querySelectorAll('.pixel');
+    let isDragging = false;
 
-function applyRandomColor(color, type) {
-    const pixel = document.querySelectorAll('.pixel');
-    for (let i = 0; i < pixel.length; i++) {
+    function selectedColorType(color, type) {
         if (type == 'hue') {
-            pixel[i].style.backgroundColor = randomHue(color);
+            return randomHue(color);
         } else if (type == 'saturation') {
-            pixel[i].style.backgroundColor = randomSaturation(color);
+            return randomSaturation(color);
         } else if (type == 'tint') {
-            pixel[i].style.backgroundColor = randomTint(color);
+            return randomTint(color);
+        } else if (type == 'random') {
+            return randomColor(color);
         } else {
-            pixel[i].style.backgroundColor = randomColor(color);
+            return color;
         }
     }
+
+    pixels.forEach((pixel) => {
+        pixel.addEventListener('mousedown', () => {
+            isDragging = true;
+            pixel.style.backgroundColor = selectedColorType(color, type);
+        });
+
+        pixel.addEventListener('mouseover', () => {
+            if (isDragging) {
+                pixel.style.backgroundColor = selectedColorType(color, type);
+            }
+        });
+
+        pixel.addEventListener('mouseup', () => {
+            isDragging = false;
+        });
+    });
 }
+
+// INITIALIZE
+controlChanges();
