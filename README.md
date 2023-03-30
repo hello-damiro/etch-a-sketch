@@ -1,25 +1,24 @@
 # etch-a-sketch
 
-The Odin Project - JS Foundation Project
-I seriously do not know a usecase of this, bu yeah, its a fun project to build.
+## The Odin Project - JS Foundation Project
 
-LIVE SITE [HERE](https://hello-damiro.github.io/etch-a-sketch)
+VIEW LIVE [HERE](https://hello-damiro.github.io/etch-a-sketch)
 
-</br>
-
-![Screenshot](https://github.com/hello-damiro/etch-a-sketch/blob/main/assets/screenshot.png?raw=true)
+I seriously do not know a usecase of this, bu yeah, its a fun project to build. _Completed March 27 2023._
 
 </br>
-
-## Timeline
 
 **Day 1:** Work with pseudo code, create environment, setup files. Dive into code.
 
 **Day 2:** Struggled with some CSS. Research about color theory and applied some cool stuff on JS.
 
-**Day 3:** Finalize color functionalities. _(March 27 2023)_
+**Day 3:** Finalize color functionalities.
 
 </br>
+
+## Screeshot
+
+![Screenshot](https://github.com/hello-damiro/etch-a-sketch/blob/main/assets/screenshot.png?raw=true)
 
 ## Pseudo code
 
